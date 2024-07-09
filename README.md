@@ -104,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 ## License
-This SDK is licensed under the MIT License. See the LICENSE file for details.
+This SDK is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
