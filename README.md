@@ -17,7 +17,8 @@ allprojects {
 }
 ```
 2. **Add the dependency in your app-level build.gradle file**
-```
+
+```gradle
 dependencies {
     implementation 'com.github.Speedpepro:speedpepaymentgateway:1.0.0'
 }
@@ -25,7 +26,7 @@ dependencies {
 ## Initialize the SDK
 First, create an instance of the `SpeedPePaymentGateway` class by providing your public key and secret key:
 
-```
+```java
 SpeedPePaymentGateway paymentGateway = new SpeedPePaymentGateway(
     "your_public_key",
     "your_secret_key"
@@ -34,7 +35,7 @@ SpeedPePaymentGateway paymentGateway = new SpeedPePaymentGateway(
 ## Initiate a Payment
 Use the `initiatePayment` method to start a payment. This method requires the customer's mobile number, amount, order ID, redirect URL, and a note. You also need to implement the `PaymentCallback` interface to handle the success and failure responses.
 
-```
+```java
 paymentGateway.initiatePayment(
     "customer_mobile",
     15.0,
@@ -60,7 +61,7 @@ paymentGateway.initiatePayment(
 ## Example
 Here is a complete example of how to use the SDK in an `Activity`:
 
-```
+```java
 public class MainActivity extends AppCompatActivity {
 
     private SpeedPePaymentGateway paymentGateway;
@@ -105,4 +106,3 @@ public class MainActivity extends AppCompatActivity {
 
 ## License
 This SDK is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
