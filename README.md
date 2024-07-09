@@ -19,7 +19,7 @@ allprojects {
 2. **Add the dependency in your app-level build.gradle file**
 ```
 dependencies {
-    implementation 'com.github.yourusername:speedpepayment:1.0.0'
+    implementation 'com.github.Speedpepro:speedpepaymentgateway:1.0.0'
 }
 ```
 ## Initialize the SDK
